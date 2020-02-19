@@ -1,0 +1,501 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  
+  
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   <link rel="shortcut icon" href="images/fav.png" type="image/x-icon" style="border-radius:20px" />
+
+
+   <link href="lightbox.min.css" type="text/css" rel="stylesheet" >
+  
+   <script src="light.js"></script>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  
+  
+  <!-----animation----->
+  <script src="https://unpkg.com/scrollreveal"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+
+<title>Kbfoods</title>
+<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</head>
+<body class="">
+
+<header>
+<div class="container">
+
+<nav class="nav">
+
+<div class="menu-toggle">
+  <i class="fa fa-bars"></i>
+  <i class="fa fa-times"></i>
+</div>
+
+<A href="#" class="logo"><img src="images/logo-rosa.png"  style="width:150px;height:100px;top:30px"></A>
+<ul class="nav-list">
+
+  <li class="nav-item">
+  <a href="index.html" class="nav-link active">Home</a>
+</li>
+
+
+
+
+<li class="nav-item">
+  <a href="#menu" class="nav-link">Menu</a>
+</li>
+
+
+<li class="nav-item">
+  <a href="#footer" class="nav-link">About</a>
+</li>
+
+
+<li class="nav-item">
+  <a href="index.html" class="nav-link" data-toggle="modal" data-target="#myModal" data-lat='10.85' data-lng='106.62'  >Location</a>
+</li>
+
+
+<li class="nav-item">
+  <a href="#contact" class="nav-link">Contact</a>
+</li>
+
+
+
+
+
+</ul>
+
+</nav>
+
+</div>
+</header >
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" style="font-size:30px;outline:none">&times;</span></button>
+          
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-12 modal_body_content">
+             
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 modal_body_map">
+              <div class="location-map" id="location-map">
+                <div style="width:200; height:;" id="map_canvas">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.230696260198!2d67.05621494934336!3d24.890111383961635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33efad27a6395%3A0xe79a16555d2d097!2sKarachi%20Center%2C%20P.I.B%20Road%2CUniversity%20Road%2CGulshan-e-iqbal.%D8%8C%20Ghausia%20Colony%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1581082513257!5m2!1sen!2s" width="780" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 modal_body_end">
+                        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--------header end-------->
+
+<section class="hero" id="hero">
+
+
+<div class="container"  >
+<h2 class="sub-headline" id="animate" >
+    <span class="first-letter" >W</span>elcome
+</h2>
+  <h1 class="headline" id="animate1">The KB</h1>
+<div class="headline-description">
+<div class="separator" id="animate2">
+ <div class=" line line-left"> </div>
+<div class="asterisk">
+<i class="fa fa-asterisk"></i>
+</div>
+<div class=" line line-right"> </div>
+
+
+</div>
+
+
+
+<div class="single-animation" id="animate3">
+<h5>Ready to be open</h5>
+<a href="#" class="btn cta-btn" style="margin-top:10px" id="animate4"> explore </a>
+
+</div>
+
+</div>
+
+
+
+</div>
+
+
+
+</section>
+
+<!-------hero ends---->
+
+<!---------------->
+
+<section class="discover-our-story">
+<div class="container">
+  <div class="row">
+<div class="col-md-6">
+<div class="restaurant-info">
+
+  <div class=".resturant-description padding-right animate-left">
+
+<div class="global-headline">
+  <h2 class="sub-headline">
+    <span class="first-letter">D</span>iscover
+</h2>
+  <h1 class="headline headline-dark">Our Story</h1> 
+</div>    
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit similique, autem aperiaLorem ipsum dolor sit amet consectetur adipisicing elit. Sit similique, autem aperia
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit similique, autem aperia
+
+</p>
+
+<a href="" class="btn body-btn" style="margin-bottom: 30px;text-align: center;margin-left: 40%;">About Us</a>
+</div></div>
+</div>
+<div class="col-md-6" >
+<div class="restaurant-info-img animate-right" >
+  <img src="images/our-story-1.jpg"> 
+</div>
+</div></div>
+</div>
+</section>
+<!----------------discover story ends--->
+
+<section class="tasteful-recipes between">
+
+<div class="container" id="menu">
+
+  </div>
+  <div class="global-headline">
+
+    <div class="animate-top"  >
+
+      <h2 class="sub-headline" style="margin-top:6%;"data-aos="fade-up"> 
+        <span class="first-letter">T</span>asteful
+    </h2>
+    <div class="animate-bottom">
+
+      <h1 class="headline headline">Recipes</h1> 
+
+    </div>
+  
+
+
+</div>
+
+
+</section>
+
+
+<Section class="discover-our-menu">
+  <div class="container">
+    <div class="row">
+<div class="col-md-6">
+      <div class="restaurant-info">
+<div class="image-group padding-right animate-left">
+  <div class="lightbox" src="images/menu-group-1.jpg"> <img src="images/menu-group-1.jpg"></a></div>
+  <div class="lightbox" src="images/menu-group-1.jpg"><img src="images/menu-group-2.jpg"></div>
+  <div class="lightbox" src="images/menu-group-1.jpg"><img src="images/menu-group-3.jpg"></div>
+  <div class="lightbox" src="images/menu-group-1.jpg"><img src="images/menu-group-4.jpg"></div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="restaurant-description animate-right">
+  <div class="global-headline">
+  <h2 class="sub-headline">
+    <span class="first-letter">D</span>iscover
+</h2>
+  <h1 class="headline headline-dark">Menu</h1> 
+  <div class="asterisk">
+    <i class="fa fa-asterisk"></i>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur expedita quia minus accusantium nemo at unde quas asperiores iste vitae cupiditate, in nam ratione sequi nesciunt sint optio aliquam voluptatum!</p>
+
+<a href="" class=" btn body-btn">View The Full Menu</a>
+
+  </div>
+  </div>
+</div>
+</div>
+  </div>
+
+</Section>
+
+<section class="perfect-blend between ">
+  <div class="container">
+  
+  
+  
+  <div class="global-headline">
+    <div class="animate-top"data-aos="fade-up">
+    <h2 class="sub-headline" style="margin-top:8%;">
+      <span class="first-letter">T</span>he Perfect
+  </h2></div>
+    <h1 class="headline "> Blend</h1> 
+
+
+</div></div></section>
+
+
+
+
+<section class="curlinary-delight">
+
+  <div class="container">
+<div class="row">
+  <div class="col-md-6">
+    <div class="restaurant-info">
+    
+      <div class=".resturant-description padding-right animate-left">
+    
+    <div class="global-headline">
+      <h2 class="sub-headline" >
+        <span class="first-letter">C</span>ulinary
+    </h2>
+      <h1 class="headline headline-dark">Delight</h1> 
+      <div class="asterisk">
+        <i class="fa fa-asterisk"></i>
+        </div>
+    </div>    
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit similique, autem aperiaLorem ipsum dolor sit amet consectetur adipisicing elit. Sit similique, autem aperia
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit similique, autem aperia
+    
+    </p>
+    
+    <a href="" class=" btn body-btn" style="margin-bottom: 30px;text-align: center;margin-left: 35%;">Make a reservation</a>
+    </div></div></div>
+<div class="col-md-6">
+    <div class="image-group">
+      <img  class="animate-top" src="images/delight-group-1.jpg">
+      
+      <img  class="animate-bottom" src="images/delight-group-2.jpg">
+      
+     
+    </div>  
+</div></div>
+    </div>
+  </div>
+  
+
+
+</section>
+
+<div class="conytainer" id="contact" "align="center" style="width:100%;align-items:center;text-align:center;margin-bottom:5%;">
+<Div class="row">
+<Div class="col-md-11">
+<form class="my-form" style="margin-left:10%">
+  <div class="container">
+    <h1>Get in touch!</h1>
+    <ul>
+      <li>
+        <select>
+          <option selected disabled>-- Please choose an option --</option>
+          <option>Request Quote</option>
+          <option>Send Resume</option>
+          <option>Other</option>      
+        </select>
+      </li>
+      <li>
+        <div class="grid grid-2">
+          <input type="text" placeholder="Name" required>  
+          <input type="text" placeholder="Surname" required>
+        </div>
+      </li>
+      <li>
+        <div class="grid grid-2">
+          <input type="email" placeholder="Email" required>  
+          <input type="tel" placeholder="Phone">
+        </div>
+      </li>    
+      <li>
+        <textarea placeholder="Message"></textarea>
+      </li>   
+      <li>
+        <input type="checkbox" id="terms">
+        <label for="terms">I have read and agreed with <a href="">the terms and conditions.</a></label>
+      </li>  
+      <li>
+        <div class="grid grid-3">
+          <div class="required-msg">REQUIRED FIELDS</div>
+          <button class="btn-grid" type="submit" >
+          
+            <span >SUBMIT</span>
+          </button>
+          <button class="btn-grid" type="reset" >
+            
+           
+            <span >RESET</span>
+          </button> 
+        </div>
+      </li>    
+    </ul>
+  </div>
+</form>
+</Div>
+</Div></div></div>>/</div>></div>
+
+<footer id="footer">
+
+
+<div class="container">
+
+
+
+  <div class="back-to-top">
+    <A href="#hero" ><i class="fa fa-chevron-up"></i></A>
+  </div>
+
+
+<div class="footer-content">
+
+  <div class="footer-content-about animate-up">
+    <h4>About <span style="color:gold;font-weight:500 !important;font-size:22px"><b>KB</b></span></h4>
+    <div class="asterisk">
+      <i class="fa fa-asterisk"></i>
+      </div> 
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa nam commodi cupiditate explicabo hic perspiciatis minima, consequatur officiis tenetur, provident magnam quasi rem pariatur numquam. Nemo, minus! Delectus, sed sint!</p>  
+  </div>
+<div class="footer-content-divider animate-bottom">
+
+  <div class="social-media">
+    <h4>Follow Along</h4>
+    <ul class="social-icons">
+     <li><a href=""> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+     <li><a href=""> <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+     <li><a href=""> <i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+     <li><a href=""> <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+     <li><a href=""> <i class="fa fa-github" aria-hidden="true"></i></a></li>
+    </ul>
+  </div>
+  <div class="newsletter-container">
+    <h4>NEWSLETTER</h4>
+    <form action="" class="newsletter-form">
+      <input type="text" class="newsletter-input" placeholder="email">
+
+      <button class="newsletter-btn" type="submit">
+        <i class="fa fa-envelope"></i> </button>
+    </form>
+  </div>
+  
+</div>
+<p>
+<small style="color:gold">&copy;</small>&nbsp;KB<small>foods.com</small>
+</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+</footer>
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({offset:400,
+	duration:300});
+  </script>
+
+
+
+
+<script>
+
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });
+
+
+</script>
+
+
+
+
+
+<script>
+
+const selectElement = function(element){
+
+  return document.querySelector(element);
+}
+  var menuToggler =  selectElement('.menu-toggle')
+  var  body =  selectElement('body')
+menuToggler.addEventListener('click',function(){
+
+
+  body.classList.toggle('open');
+})  ;
+
+</script>
+
+
+<script>
+  
+</script>
+
+
+<!--https://codepen.io/JoshuaSoileau/pen/jqpWEB
+  https://codepen.io/l1f3l1k3/pen/bGNXrON
+  */------>
+
+
+</body>
+</html>

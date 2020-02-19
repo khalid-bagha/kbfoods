@@ -1,0 +1,990 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+html{
+  font-size: 10px;
+scroll-behavior: smooth;
+
+}
+*{
+  margin: 0;padding: 0;
+  box-sizing: border-box;
+
+}
+
+.logo:hover{
+
+transform:rotateY(360deg);
+transition:1s;}
+
+section{
+  padding: 3.9rem 0;
+}
+
+img{
+  width: 100%;
+  max-width: 200%;
+}
+a{
+  text-decoration: none;
+}
+
+p{
+  font-size: 1.6rem;
+}
+
+.container{
+  width: 100%;
+  max-width: 122.5rem;
+  margin: 0 auto !important;
+  padding: 0 2.4rem;
+}
+
+
+/*header*/
+
+header{
+  width: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 1;
+  background-image: linear-gradient(to bottom,rgba(0,0,0,.5),transparent);
+}
+
+
+.nav{
+  height: 7.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.menu-toggle{
+  color: white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.2rem;
+  right: 2.5rem;
+  cursor: pointer;
+  z-index: 1500;
+}
+
+
+
+.fa-times{
+  display: none;
+}
+
+.nav-list{
+  list-style: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100vh;
+  background-color: black;
+  padding: 4.4rem;
+  display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+z-index: 1250;
+ transform: translateX(-100%);
+transition: transform .5s;
+}
+
+
+.nav::before{
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+height: 100vh;
+background-color: rgba(0,0,0,.8);
+z-index: 1000;
+opacity: 0;
+transform: scale(0);
+transition:opacity .5s;
+
+}
+
+.open .fa-times{
+  display: block;
+
+}
+
+
+
+.open .fa-bars{
+  display:none;
+  
+}
+
+.open .nav-list{
+
+transform: translateX(0);
+
+}
+
+.open .nav::before{
+
+opacity: 1;
+transform: scale(1);
+}
+
+
+
+.nav-item{
+  border-bottom: 2px solid rgba(255,255,255,.3);
+}
+
+.nav-link{
+  display: block;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: color .5s;
+  margin-right: -2px;
+  font-size: 1.6rem;
+}
+
+.nav-link:hover{
+  color: gold;
+  
+}
+
+
+/*hero*/
+
+.hero{
+  width: 100%;
+  height: 100vh;
+  background-image:url("images/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+}
+
+.sub-headline{
+  font-size: 8.5rem;
+  color:#c59d5f;font-family: 'Herr Von Muellerhoff', cursive;
+font-weight: 400;
+line-height: .4;
+letter-spacing: 2px;
+opacity: 1;
+
+
+}
+
+.first-letter{
+  text-transform: uppercase;
+  font-size: 10.3rem;
+}
+
+.headline{
+
+color: white;
+font-size: 3.7rem;
+font-family: ;
+text-transform: uppercase;
+font-weight: 900;
+letter-spacing: .5rem;
+margin-right: -.5rem;
+}
+
+
+.separator{
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.line{
+  width: 100%;
+  max-width: 8.4rem;
+  height: .25rem;
+  background-color: white;
+  position: relative;
+
+}
+
+.line-right::before,
+.line-left::before{
+  content: '';
+  position: absolute;
+  top: 50%;transform: translateY(-50%);
+  border: .6rem solid transparent;
+}
+
+
+
+.line-right::before{
+  right: 0;
+  border-right-color: white; 
+}
+
+
+
+.line-left::before{
+left: 0;
+  border-left-color: white; 
+}
+
+
+
+
+.asterisk{
+  font-size: 1.2rem;
+  color:gold;
+  margin: 0 1.6rem;
+}
+
+.headline-description{
+color: white;
+text-transform: uppercase;
+margin-bottom: 1.2rem;
+letter-spacing: 3px;
+font-size: 1.4rem;
+font-weight: 100;
+margin-right: -3px;
+}
+
+
+.btn{
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: -2px;
+}
+
+.cta-btn{
+font-size: 1.1rem;
+background-color: white;
+padding: .9rem 1.8rem;
+text-decoration: none;
+color: gold;
+border-radius: .4rem;
+transition: .5s;
+font-weight: bold;
+}
+
+.cta-btn:hover,
+.cta-btn:focus{
+  color: white;
+  background-color: gold;
+}
+
+
+
+/*Our story*/
+.global-headline{
+  text-align: center;
+  margin-top: 3.9rem;
+
+}
+.discover-our-story.global-headline{
+  margin-top: 6.9rem;
+}
+
+.global-headline .asterisk{
+  color: black;
+  margin: 2.4rem 0;
+}
+
+
+.headline-dark{
+  color: black;
+  letter-spacing: .7rem;
+  margin-right:-.7rem;
+}
+
+
+.global-headline .sub-headline{
+  letter-spacing:-1px ;
+  line-height: .42;
+
+}
+
+/*restaurant discover food*/
+.resturant-info{
+text-align: center;
+}
+.resturant-description{
+  margin-bottom: 10rem !important;
+}
+
+.resturant-description p{
+  line-height: 1.6;
+  margin-bottom: 2.4rem;
+
+}
+.body-btn{
+  font-size: 1.5rem;
+  position: relative;
+  color: gold;
+  text-align: center;
+  transition:.5s
+}
+
+.body-btn::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  background-color:gold ;
+  width: 100%;
+  height: 2px;
+  transition: .5s;
+}
+
+
+
+.body-btn:hover,
+.body-btn:focus{
+  color: black;
+}
+
+.body-btn:hover::before,
+.body-btn:focus::before{
+  background-color:black;
+}
+
+
+.tasteful-recipes{
+  background-image: url("images/tasteful-recipes.jpg") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+background-position: center;
+  
+  background-attachment: fixed;
+}
+.between{
+  min-height: 65vh;
+align-items: center;
+  align-items: center;
+}
+
+
+
+.image-group{
+  display: grid;
+  grid-template-columns: repeat(2,3fr);
+  grid-gap: 1.5rem;
+}
+
+
+
+.discover-our-menu .restaurant-description{
+  padding-top: 3rem;
+  margin-bottom: 0;
+}
+
+
+
+.perfect-blend{
+  background-image: url(images/perfect-blend.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+
+footer{
+  padding: 7.9rem 0;
+  background-color:black;
+  color: white;
+  text-align: center;
+  position: relative;}
+
+
+.back-to-top
+{
+  width: 7rem;
+  height: 7rem;
+  background-color: black;
+  left:50%;
+  position: absolute;
+  top: -3rem;
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+
+
+.back-to-top i{
+  display: block;
+  padding: 2rem;
+  color: white;
+  font-size: 2rem;
+}
+
+
+.footer-content{
+  /*overflow: hidden;*/
+
+}
+
+.footer-content h4{
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  font-weight: 300 !important;
+  letter-spacing: 3px;
+  margin-bottom: 3rem;
+}
+.footer-content .asterisk{
+  margin: 2.4rem 0;
+
+}.footer-content .about{
+  margin-bottom: 5.4rem;
+
+}
+
+.footer-content .about p{
+  line-height: 2;
+
+}
+
+.social-icons{
+  list-style: none;
+  margin-bottom: 5.4rem;
+display: flex;
+justify-content: center;
+}
+
+.social-icons i{
+  font-size: 2rem;
+  color: white;
+  padding: .8rem 2rem;
+  
+  transition: .5s;
+}
+
+
+
+.social-icons i:hover,
+.social-icons i:focus{
+  color: gold;
+}
+
+.newsletter-form{
+  width: 100%;
+  justify-content: center;
+  position: relative;
+  display: flex;
+
+}
+
+
+.newsletter-input{
+
+  width: 100%;
+  outline: none;
+  max-width: 25rem;
+  padding: 1rem;
+  border-radius: .4rem;
+}
+
+.newsletter-btn{
+  border: none;
+  background-color: transparent;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: black;
+  outline: none;
+  padding: 1px .6rem; position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 10.5rem;
+}
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+
+/* RESET RULES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+:root {
+  --white: #afafaf;
+  --red: #e31b23;
+  --bodyColor: #292a2b;
+  --borderFormEls: hsl(0, 0%, 10%);
+  --bgFormEls: hsl(0, 0%, 14%);
+  --bgFormElsFocus: hsl(0, 7%, 20%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+a {
+  color: inherit;
+}
+
+input,
+select,
+textarea,
+button {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+button,
+label {
+  cursor: pointer;
+}
+
+select {
+  appearance: none;
+}
+
+/* Remove native arrow on IE */
+select::-ms-expand {
+  display: none;
+}
+
+/*Remove dotted outline from selected option on Firefox*/
+/*https://stackoverflow.com/questions/3773430/remove-outline-from-select-box-in-ff/18853002#18853002*/
+/*We use !important to override the color set for the select on line 99*/
+select:-moz-focusring {
+  color: transparent !important;
+  text-shadow: 0 0 0 var(--white);
+}
+
+textarea {
+  resize: none;
+}
+
+ul {
+  list-style: none;
+}
+
+
+.container {
+
+}
+
+
+/* FORM ELEMENTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.my-form h1 {
+  margin-bottom: 1.5rem;
+}
+
+.my-form li,
+.my-form .grid > *:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.my-form select,
+.my-form input,
+.my-form textarea,
+.my-form button {
+  width: 100%;
+  line-height: 1.5;
+  padding: 15px 10px;
+  border: 1px solid var(--borderFormEls);
+  color: var(--white);
+  background: var(--bgFormEls);
+  transition: background-color 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25),
+    transform 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
+}
+
+.my-form textarea {
+  height: 170px;
+}
+
+.my-form ::placeholder {
+  color: inherit;
+  /*Fix opacity issue on Firefox*/
+  opacity: 1;
+}
+
+.my-form select:focus,
+.my-form input:focus,
+.my-form textarea:focus,
+.my-form button:enabled:hover,
+.my-form button:focus,
+.my-form input[type="checkbox"]:focus + label {
+  background: var(--bgFormElsFocus);
+}
+
+.my-form select:focus,
+.my-form input:focus,
+.my-form textarea:focus {
+  transform: scale(1.02);
+}
+
+.my-form *:required,
+.my-form select {
+  background-repeat: no-repeat;
+  background-position: center right 12px;
+  background-size: 15px 15px;
+}
+
+.my-form *:required {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/asterisk.svg);  
+}
+
+.my-form select {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/down.svg);
+}
+
+.my-form *:disabled {
+  cursor: default;
+  filter: blur(2px);
+}
+
+
+/* FORM BTNS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.my-form .required-msg {
+  display: none;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/asterisk.svg)
+    no-repeat center left / 15px 15px;
+  padding-left: 20px;
+}
+
+.my-form .btn-grid {
+  position: relative;
+  overflow: hidden;
+  transition: filter 0.2s;
+}
+
+.my-form button {
+  font-weight: bold;
+}
+
+.my-form button > * {
+  display: inline-block;
+  width: 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.my-form button .back {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-110%, -50%);
+}
+
+.my-form button:enabled:hover .back,
+.my-form button:focus .back {
+  transform: translate(-50%, -50%);
+}
+
+.my-form button:enabled:hover .front,
+.my-form button:focus .front {
+  transform: translateX(110%);
+}
+
+
+/* CUSTOM CHECKBOX
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.my-form input[type="checkbox"] {
+  position: absolute;
+  left: -9999px;
+}
+
+.my-form input[type="checkbox"] + label {
+  position: relative;
+  display: inline-block;
+  padding-left: 2rem;
+  transition: background 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
+}
+
+.my-form input[type="checkbox"] + label::before,
+.my-form input[type="checkbox"] + label::after {
+  content: '';
+  position: absolute;
+}
+
+.my-form input[type="checkbox"] + label::before {
+  left: 0;
+  top: 6px;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--white);
+}
+
+.my-form input[type="checkbox"]:checked + label::before {
+  background: var(--red);
+}
+
+.my-form input[type="checkbox"]:checked + label::after {
+  left: 7px;
+  top: 7px;
+  width: 6px;
+  height: 14px;
+  border-bottom: 2px solid var(--white);
+  border-right: 2px solid var(--white);
+  transform: rotate(45deg);
+}
+
+
+/* FOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* MQ
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media screen and (min-width: 600px) {
+  .my-form .grid {
+    display: grid;
+    grid-gap: 1.5rem;
+  }
+
+  .my-form .grid-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .my-form .grid-3 {
+    grid-template-columns: auto auto auto;
+    align-items: center;
+  }
+
+  .my-form .grid > *:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .my-form .required-msg {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 541px) {
+  .my-form input[type="checkbox"] + label::before {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .my-form input[type="checkbox"]:checked + label::after {
+    top: 3px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 900px){
+  section{
+    padding: 7.9rem;
+
+  }
+
+.menu-toggle{
+  display: none;
+}
+.nav{
+  justify-content: space-between;
+}
+
+.nav-list{
+  position: initial;
+  height: initial;
+  width: initial;
+  background-color: transparent;
+  padding: 0;
+  justify-content: initial;
+  flex-direction: row;
+  transform: initial;
+  transition: initial;
+
+}
+
+
+.nav-item{
+  margin: 0 2.4rem;
+  border: none;
+
+}
+.nav-item:last-child{
+  margin-right: 0;
+
+}
+.nav-link{
+  font-size: 1.3rem;
+
+}
+
+.active{
+  position: relative;
+}
+.active::before{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: white;
+  left: 0;
+  bottom: -3px;
+
+}
+
+
+
+.sub-headline{
+  font-size: 10rem;
+}
+
+.first-letter{
+  font-size:12.2rem;
+}
+.headline{
+  font-size: 4.7rem;
+  letter-spacing: .8rem;
+
+}
+.line{
+  max-width: 11.4rem;
+}
+
+
+.resturant-info{
+  display: flex;
+  align-items: center;
+}
+
+.restaurant-info > div{
+  flex: 1;
+}
+.padding-right{padding-right: 7rem;}
+
+.footer-content{
+  max-width: 77.5rem;
+  margin: auto;
+}
+
+.footer-content .about{
+  max-width: 51.3rem;margin: 0 auto 5.4rem;
+}
+.footer-content-divider{
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-media,
+.newsletter-form{
+  width: 100%;
+  max-width: 27.3rem;
+  margin: 0 1rem;
+}
+.newsletter-btn{
+  margin-left: 6rem;
+}
+}
+
+
+
+
+
+
+[aos="fade"] {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+[aos="fade"].aos-animate {
+  opacity: 1;
+}
+
+
+
+#animate{
+	
+    animation: fade 1.8s ease;
+
+}
+
+@keyframes fade{
+    from {
+        transform: translate3d(0,100px,0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+
+}
+
+#animate1{
+	   animation: fade1 2.5s ease;}
+
+
+@keyframes fade1{
+    from {
+        transform: translate3d(0,0px,0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+
+}
+
+
+#animate2{
+	   animation: fade2 4s ease;}
+
+
+@keyframes fade2{
+    from {
+        transform: translate3d(0,0px,0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+
+}
+
+
+#animate4{
+	   animation: fade1 2.5s ease;}
+
+
+@keyframes fade1{
+    from {
+        transform: translate3d(0,0px,0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+
+}
+
+
+
+
